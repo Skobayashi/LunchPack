@@ -1,0 +1,69 @@
+
+* {
+    font-family: 'Bitstream Vera Sans Mono','Courier',monospace;
+}
+
+html, body {
+    margin: 0px;
+    padding: 15px;
+}
+
+/* tilte */
+h1.site_title {
+    font-size: 2.5em;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+h1.site_title a {
+    color: black;
+    text-decoration: none;
+}
+
+h1.site_title a:hover {
+    color: #007ad2;
+}
+
+p.site_description {
+    margin-top: 0px;
+    padding-top: 0px;
+    color: #555;
+}
+
+
+/* menu panel */
+div.menu_panel {
+    width: 300px;
+    height: 100%;
+    line-height: 200%;
+    float: left;
+    border-top: solid 1px #ccc;
+    border-right: solid 1px #ccc;
+}
+
+div.menu_panel ul li{
+    list-style: none;
+}
+
+div.menu_panel ul li a {
+    color: #555;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+div.menu_panel ul li a:hover {
+    color: #007ad2;
+}
+
+
+/* main panel */
+div.main_panel {
+    margin-left: 350px;
+    padding-right: 20px;
+}
+
+
+/* clear panel */
+div.clear_panel {
+    clear: both;
+}

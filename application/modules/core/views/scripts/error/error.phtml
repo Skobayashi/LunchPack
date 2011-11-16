@@ -1,0 +1,39 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>project</title>
+        <link href="/favicon.ico" rel="favicon" >
+        <link rel="stylesheet" type="text/css" href="/resources/css/gemini-error.css" />
+    </head>
+
+    <body>
+        <h1>Sorry!</h1>
+
+        <div class="errors">
+        
+            <p class="error_title">Throw Message: "<?php echo $this->exception->getMessage() ?>"</p>
+
+            <div class="error_file">
+                <p><?php echo $this->exception->getFile() . ': line ' . $this->exception->getLine() ?></p>
+            </div>
+
+            <p style="padding-top: 20px;">stack trace</p>
+
+            <table border="1" cellpadding="10">
+                <?php foreach($this->exception->getTrace() as $t): ?>
+                <tr>
+                    <td><p>
+                        Class: <?php echo $t['class'] ?><br />
+                        Method: <?php echo $t['function'] ?><br /><br />
+                        <?php echo $t['file'] . ': line ' . $t['line'] ?>
+                    </p></td>
+                </tr>
+                <?php endforeach; ?>
+            </table>
+
+        </div>
+    </body>
+
+</html>
+

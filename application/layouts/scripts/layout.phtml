@@ -1,0 +1,46 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>LunchPack</title>
+        <link href="/resources/css/base.css" media="screen" rel="stylesheet" type="text/css" />
+        <link href="/resources/css/description.css" media="screen" rel="stylesheet" type="text/css" />
+        <link href="/resources/lunch-pack/css/base/base.css" media="screen" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" type="text/css" media="screen" href="/resources/css/syntax/SyntaxHighlighter.css" />
+        <link href="/favicon.ico" rel="favicon" >
+        <script type="text/javascript" src="/resources/js/syntax/shCore.js"></script>
+        <script type="text/javascript" src="/resources/js/syntax/shBrushJScript.js"></script>
+        <script type="text/javascript" src="/resources/js/syntax/shBrushXml.js"></script>
+        <script type="text/javascript">
+            window.onload = function () {
+                dp.SyntaxHighlighter.ClipboardSwf = '/flach/syntax/clipboard.swf';
+                dp.SyntaxHighlighter.HighlightAll('code');
+            }
+        </script>
+    </head>
+
+    <body>
+
+        <h1 class="site_title"><a href="/">LunchPack!</a></h1>
+        <p class="site_description">this application is lunch-pack framework.</p>
+
+        <div id="contents">
+            <div class="menu_panel">
+                <ul>
+                    <li><a href="/docs/label">Label</a></li>
+                    <li><a href="/docs/window">Window</a></li>
+                </ul>
+            </div>
+
+            <div class="main_panel">
+                <div class="description_panel">
+                    <?php echo $this->layout()->content ?>
+                </div>
+            </div>
+
+            <div class="clear_panel"></div>
+        </div>
+        
+    </body>
+
+</html>
