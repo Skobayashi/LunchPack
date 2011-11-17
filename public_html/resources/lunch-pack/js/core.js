@@ -1,4 +1,4 @@
-var lunch = {};
+lunch = {};
 
 lunch.core = {
 
@@ -8,6 +8,10 @@ lunch.core = {
         
         if (lunch.button !== undefined) {
             lunch.button.init();
+        }
+
+        if (lunch.field !== undefined) {
+            lunch.field.init();
         }
 
     },
