@@ -7,8 +7,9 @@
         <link href="/resources/css/description.css" media="screen" rel="stylesheet" type="text/css" />
         <link href="/resources/lunch-pack/css/base/base.css" media="screen" rel="stylesheet" type="text/css" />
         <link rel="stylesheet" type="text/css" media="screen" href="/resources/css/syntax/SyntaxHighlighter.css" />
-        <link rel="stylesheet" type="text/css" media="screen" href="/resources/lunch-pack/css/labels.css" />
+        <link rel="stylesheet" type="text/css" media="screen" href="/resources/lunch-pack/css/label.css" />
         <link rel="stylesheet" type="text/css" media="screen" href="/resources/lunch-pack/css/window.css" />
+        <link rel="stylesheet" type="text/css" media="screen" href="/resources/lunch-pack/css/button.css" />
         <link href="/favicon.ico" rel="favicon" >
         <script type="text/javascript" src="/resources/js/syntax/shCore.js"></script>
         <script type="text/javascript" src="/resources/js/syntax/shBrushJScript.js"></script>
@@ -17,11 +18,14 @@
             window.onload = function () {
                 dp.SyntaxHighlighter.ClipboardSwf = '/flach/syntax/clipboard.swf';
                 dp.SyntaxHighlighter.HighlightAll('code');
+
+                lunch.core.init();
             }
         </script>
 
         <script type="text/javascript" src="/resources/lunch-pack/js/core.js" ></script>
         <script type="text/javascript" src="/resources/lunch-pack/js/window.js" ></script>
+        <script type="text/javascript" src="/resources/lunch-pack/js/button.js" ></script>
     </head>
 
     <body>
@@ -34,6 +38,8 @@
                 <ul>
                     <li><a href="/docs/label">→ Label</a></li>
                     <li><a href="/docs/window">→ Window</a></li>
+                    <li><a href="/docs/button">→ Button</a></li>
+                    <li><a href="/docs/field">→ Field</a></li>
                 </ul>
             </div>
 
