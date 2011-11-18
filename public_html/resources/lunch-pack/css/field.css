@@ -36,9 +36,6 @@ input.lunch-field-caution {
     outline: none;
 }
 
-input::-webkit-input-placeholder, .lunch-field-caution {
-    color: #f2a0a1;
-}
 
 
 input.lunch-field-success {

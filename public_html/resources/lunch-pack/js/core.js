@@ -14,6 +14,10 @@ lunch.core = {
             lunch.field.init();
         }
 
+        if (lunch.menu !== undefined) {
+            lunch.menu.init();
+        }
+
     },
 
     genId: function () {

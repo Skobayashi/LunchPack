@@ -1,0 +1,8 @@
+
+lunch.menu = {
+
+    init: function () {
+        
+    }
+
+};
