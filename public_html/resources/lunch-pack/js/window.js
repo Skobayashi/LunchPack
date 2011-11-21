@@ -68,6 +68,11 @@ lunch.window = {
         var me = this,
             el = me.generateBaseElement('confirm');
 
+        lunch.window.func = function () {
+            func();
+            lunch.window.hide();
+        };
+
         var paragraph = document.createElement('p');
         paragraph.innerHTML = titleValue;
 
@@ -94,7 +99,7 @@ lunch.window = {
         button.setAttribute('value', 'OK');
         button.setAttribute('class', 'lunch-button-info');
         button.setAttribute('style', 'margin:10px;padding-left:20px;padding-right:20px;');
-        button.setAttribute('onmouseup', func);
+        button.setAttribute('onmouseup', 'lunch.window.func();');
 
         negative.setAttribute('id', lunch.core.genId());
         negative.setAttribute('type', 'button');
@@ -146,5 +151,9 @@ lunch.window = {
         if (el !== null) {
             el.parentNode.removeChild(el);
         }
+    },
+
+    func: function () {
+        
     }
 };
