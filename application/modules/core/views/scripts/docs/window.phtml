@@ -15,7 +15,22 @@
 <pre name="code" class="javascript">
 lunch.window.info('success', 'do complete!');
 </pre>
-<input class="lunch-button" type="button" value="running demo" onclick="lunch.window.info('success', 'do complete!');" />
-<br />
+<input class="lunch-button-success" type="button" value="running demo" onclick="lunch.window.info('success', 'do complete!');" />
+<br /><br />
 
 
+<pre name="code" class="javascript">
+lunch.window.alert('caution!', 'error message.');
+</pre>
+<input type="button" class="lunch-button-caution" value="running demo" onclick="lunch.window.alert('caution!', 'error message.');" />
+<br /><br />
+
+
+<pre name="code" class="javascript">
+lunch.window.confirm('confirm', 'do you want action?', function () {
+    alert('start action!');
+});
+</pre>
+<input type="button" class="lunch-button-info" value="running demo" onclick="lunch.window.confirm('confirm', 'do you want action?', function () {
+    alert('start action!');
+});" />

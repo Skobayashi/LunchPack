@@ -33,6 +33,8 @@ div.lunch-window-wrap {
     -moz-border-radius: 4px;
 }
 
+
+/* title */
 div.lunch-window-wrap div#lunch-window-title-info {
     background-color: #69b076;
     height: 30px;
@@ -49,6 +51,42 @@ div.lunch-window-wrap div#lunch-window-title-info p{
     font-family: "Lucida Grande", "Lucida Sans Unicode", Tahoma, "HiraMaruPro-W4", "ヒラギノ丸ゴ Pro W4", "Hiragino Kaku Gothic Pro", "HG丸ゴシックM-PRO", sans-serif;
 }
 
+
+div.lunch-window-wrap div#lunch-window-title-alert {
+    background-color: #ec6d71;
+    height: 30px;
+}
+
+div.lunch-window-wrap div#lunch-window-title-alert p{
+    vertical-align: middle;
+    margin: 0px;
+    padding: 5px;
+    padding-left: 10px;
+
+    color: white;
+    font-weight: bold;
+    font-family: "Lucida Grande", "Lucida Sans Unicode", Tahoma, "HiraMaruPro-W4", "ヒラギノ丸ゴ Pro W4", "Hiragino Kaku Gothic Pro", "HG丸ゴシックM-PRO", sans-serif;
+}
+
+
+div.lunch-window-wrap div#lunch-window-title-confirm {
+    background-color: #38a1db;
+    height: 30px;
+}
+
+div.lunch-window-wrap div#lunch-window-title-confirm p{
+    vertical-align: middle;
+    margin: 0px;
+    padding: 5px;
+    padding-left: 10px;
+
+    color: white;
+    font-weight: bold;
+    font-family: "Lucida Grande", "Lucida Sans Unicode", Tahoma, "HiraMaruPro-W4", "ヒラギノ丸ゴ Pro W4", "Hiragino Kaku Gothic Pro", "HG丸ゴシックM-PRO", sans-serif;
+}
+
+
+/* message */
 div.lunch-window-wrap div#lunch-window-msg {
     padding: 15px;
 
