@@ -1,0 +1,10 @@
+{
+    "dest": "../../public_html/lunchpack.js",
+    "path": "../../public_html/resources/lunch-pack/js/",
+    "src": [
+        "core.js",
+        "button.js",
+        "field.js",
+        "window.js"
+    ]
+}
